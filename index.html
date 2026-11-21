@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantik Teglar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>HTML <span>Semantik</span> Teglar</h1>
+        <p>
+            Semantik teglar sahifaning ma’nosini tushunarli qilib beradi.
+            Ular SEO, accessibility va kodning tuzilishini yaxshilaydi.
+        </p>
+    </header>
+
+    <div class="container">
+
+        <!-- Chap taraf: teglar ro'yxati -->
+        <section class="tag-list">
+
+            <article class="tag-card pink">
+                <div class="number">1</div>
+                <div class="tag-info">
+                    <h2>&lt;header&gt;</h2>
+                    <p>Sahifaning yuqori qismi. Odatda logotip, nom va navigatsiya joylashadi.</p>
+                </div>
+                <div class="tag-note">Sahifa tepasidagi kirish qismi</div>
+            </article>
+
+            <article class="tag-card green">
+                <div class="number">2</div>
+                <div class="tag-info">
+                    <h2>&lt;nav&gt;</h2>
+                    <p>Navigatsiya havolalarini guruhlaydi. Menyu va linklar uchun.</p>
+                </div>
+                <div class="tag-note">Navigatsiya bo‘limi</div>
+            </article>
+
+            <article class="tag-card blue">
+                <div class="number">3</div>
+                <div class="tag-info">
+                    <h2>&lt;main&gt;</h2>
+                    <p>Sahifaning asosiy va eng muhim kontenti. Har bir sahifada bitta bo‘ladi.</p>
+                </div>
+                <div class="tag-note">Asosiy kontent maydoni</div>
+            </article>
+
+            <article class="tag-card yellow">
+                <div class="number">4</div>
+                <div class="tag-info">
+                    <h2>&lt;section&gt;</h2>
+                    <p>Mavzuga oid kontentlarni guruhlaydi. Sahifaning bo‘limi.</p>
+                </div>
+                <div class="tag-note">Mavzuli bo‘lim</div>
+            </article>
+
+            <article class="tag-card purple">
+                <div class="number">5</div>
+                <div class="tag-info">
+                    <h2>&lt;article&gt;</h2>
+                    <p>Mustaqil mazmunga ega kontent. Masalan: blog posti, yangilik yoki maqola.</p>
+                </div>
+                <div class="tag-note">Mustaqil kontent</div>
+            </article>
+
+            <article class="tag-card pink">
+                <div class="number">6</div>
+                <div class="tag-info">
+                    <h2>&lt;aside&gt;</h2>
+                    <p>Asosiy kontentga aloqador qo‘shimcha ma’lumotlar. Yon panel.</p>
+                </div>
+                <div class="tag-note">Yon qo‘shimcha ma’lumot</div>
+            </article>
+
+            <article class="tag-card green">
+                <div class="number">7</div>
+                <div class="tag-info">
+                    <h2>&lt;footer&gt;</h2>
+                    <p>Sahifaning pastki qismi. Mualliflik, aloqa va qo‘shimcha linklar.</p>
+                </div>
+                <div class="tag-note">Sahifa pastki qismi</div>
+            </article>
+
+            <article class="tag-card blue">
+                <div class="number">8</div>
+                <div class="tag-info">
+                    <h2>&lt;figure&gt;</h2>
+                    <p>Rasm, diagramma, kod va boshqa media elementlarni guruhlaydi.</p>
+                </div>
+                <div class="tag-note">Medialar guruhi</div>
+            </article>
+
+            <article class="tag-card yellow">
+                <div class="number">9</div>
+                <div class="tag-info">
+                    <h2>&lt;figcaption&gt;</h2>
+                    <p>Figure ichidagi rasm yoki media uchun izoh beradi.</p>
+                </div>
+                <div class="tag-note">Rasm izohi</div>
+            </article>
+
+            <article class="tag-card purple">
+                <div class="number">10</div>
+                <div class="tag-info">
+                    <h2>&lt;time&gt;</h2>
+                    <p>Vaqt va sanani belgilash uchun ishlatiladi.</p>
+                </div>
+                <div class="tag-note">Sana va vaqt</div>
+            </article>
+
+            <article class="tag-card pink">
+                <div class="number">11</div>
+                <div class="tag-info">
+                    <h2>&lt;details&gt; / &lt;summary&gt;</h2>
+                    <p>Yashiriladigan kontent va uni ochish uchun sarlavha yaratadi.</p>
+                </div>
+                <div class="tag-note">Yopiladigan bo‘lim</div>
+            </article>
+
+        </section>
+
+        <!-- O'ng taraf -->
+        <section class="right-content">
+
+            <h2 class="section-title">Sahifa tuzilishi (visual ko‘rinish)</h2>
+
+            <div class="browser">
+
+                <div class="browser-top">
+                    <span class="dot red-dot"></span>
+                    <span class="dot yellow-dot"></span>
+                    <span class="dot green-dot"></span>
+                </div>
+
+                <div class="website">
+
+                    <header class="demo-header">
+                        <span class="label red-label">&lt;header&gt;</span>
+
+                        <h2 class="logo">LOGO</h2>
+
+                        <nav class="demo-nav">
+                            <a href="#home">Bosh sahifa</a>
+                            <a href="#services">Xizmatlar</a>
+                            <a href="#blog">Blog</a>
+                            <a href="#contact">Aloqa</a>
+                        </nav>
+
+                        <button class="search-btn" id="searchBtn" aria-label="Qidirish">
+                            🔍
+                        </button>
+                    </header>
+
+                    <div id="searchBox" class="search-box hidden">
+                        <input type="text" id="searchInput" placeholder="Qidiruv...">
+                        <button id="closeSearch">✕</button>
+                    </div>
+
+                    <nav class="demo-navigation">
+                        <span class="label green-label">&lt;nav&gt;</span>
+                        <span>Navigatsiya menyusi</span>
+                    </nav>
+
+                    <main class="demo-main" id="home">
+
+                        <section class="featured-section" id="services">
+                            <span class="label blue-label">&lt;main&gt;</span>
+
+                            <div class="main-inner">
+
+                                <section class="featured-card">
+                                    <span class="label yellow-label">&lt;section&gt;</span>
+
+                                    <figure>
+                                        <img
+                                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                                            alt="Tabiat va tog' manzarasi"
+                                        >
+                                        <figcaption>
+                                            Tabiat manzarasi
+                                        </figcaption>
+                                    </figure>
+
+                                    <div class="text-lines">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+
+                                    <button class="more-btn">Batafsil</button>
+                                </section>
+
+                                <div class="articles">
+
+                                    <article class="article-card" id="blog">
+                                        <span class="label purple-label">&lt;article&gt;</span>
+
+                                        <div class="article-content">
+                                            <img
+                                                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80"
+                                                alt="Kompyuter va dasturlash"
+                                            >
+
+                                            <div>
+                                                <h3>HTML haqida maqola</h3>
+                                                <div class="text-lines">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <a href="#blog">O‘qish →</a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                    <article class="article-card">
+                                        <span class="label purple-label">&lt;article&gt;</span>
+
+                                        <div class="article-content">
+                                            <img
+                                                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80"
+                                                alt="Tog' manzarasi"
+                                            >
+
+                                            <div>
+                                                <h3>Yana bir maqola</h3>
+                                                <div class="text-lines">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <a href="#blog">O‘qish →</a>
+                                            </div>
+                                        </div>
+                                    </article>
+
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <aside class="sidebar">
+                            <span class="label red-label">&lt;aside&gt;</span>
+
+                            <h3>So‘nggi yangiliklar</h3>
+
+                            <div class="news-item">
+                                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=200&q=80" alt="">
+                                <div class="lines"></div>
+                            </div>
+
+                            <div class="news-item">
+                                <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=200&q=80" alt="">
+                                <div class="lines"></div>
+                            </div>
+
+                            <div class="news-item">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&q=80" alt="">
+                                <div class="lines"></div>
+                            </div>
+
+                            <h3>Foydali havolalar</h3>
+
+                            <ul>
+                                <li>HTML darslari</li>
+                                <li>CSS darslari</li>
+                                <li>JavaScript darslari</li>
+                                <li>Loyihalar</li>
+                            </ul>
+                        </aside>
+
+                    </main>
+
+                    <footer class="demo-footer" id="contact">
+                        <span class="label green-label">&lt;footer&gt;</span>
+                        <p>© <span id="year"></span>. Barcha huquqlar himoyalangan.</p>
+                        <a href="#">Maxfiylik</a>
+                        <a href="#">Foydalanish shartlari</a>
+                        <a href="#">Aloqa</a>
+                        <span>🌐 ✈ ▶</span>
+                    </footer>
+
+                </div>
+            </div>
+
+            <!-- Kod namunasi -->
+            <div class="bottom-grid">
+
+                <section class="code-section">
+                    <h2>To‘liq HTML misol</h2>
+
+                    <pre><code>&lt;header&gt;
+  &lt;h1&gt;LOGO&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#"&gt;Bosh sahifa&lt;/a&gt;
+    &lt;a href="#"&gt;Xizmatlar&lt;/a&gt;
+    &lt;a href="#"&gt;Blog&lt;/a&gt;
+    &lt;a href="#"&gt;Aloqa&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;section&gt; ... &lt;/section&gt;
+  &lt;article&gt; ... &lt;/article&gt;
+  &lt;aside&gt; ... &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;© 2026. Barcha huquqlar.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+                </section>
+
+                <!-- Afzalliklari -->
+                <section class="advantages">
+                    <h2>Semantik teglar ishlatishning afzalliklari</h2>
+
+                    <div class="advantage">
+                        <span class="adv-icon">🔎</span>
+                        <div>
+                            <h3>SEO</h3>
+                            <p>Qidiruv tizimlari sahifa tuzilishini yaxshiroq tushunadi.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <span class="adv-icon">♿</span>
+                        <div>
+                            <h3>Accessibility</h3>
+                            <p>Ekran o‘qiydigan dasturlar uchun tushunarli bo‘ladi.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <span class="adv-icon">💻</span>
+                        <div>
+                            <h3>Tartibli kod</h3>
+                            <p>Kodning tuzilishi aniq va o‘qish oson bo‘ladi.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <span class="adv-icon">👥</span>
+                        <div>
+                            <h3>Katta loyihalarda qulay</h3>
+                            <p>Sahifani bo‘limlarga ajratish va jamoada ishlash osonlashadi.</p>
+                        </div>
+                    </div>
+
+                    <details class="reminder">
+                        <summary>💡 Eslatma</summary>
+                        <p>
+                            Semantik teglar sahifaning ko‘rinishini emas,
+                            balki uning ma’nosini belgilaydi.
+                            Ularni CSS yordamida xohlagan uslubda bezash mumkin.
+                        </p>
+                    </details>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
